@@ -14,8 +14,8 @@ resource "aws_autoscaling_group" "tf-ASG" {
   }
 }
 
+# Attaches the target group to the Auto Scaling Group
 resource "aws_autoscaling_attachment" "tf-asg-attachment" {
   autoscaling_group_name = aws_autoscaling_group.tf-ASG.name
   lb_target_group_arn    = aws_lb_target_group.tf-TG.arn
 }
-
