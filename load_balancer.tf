@@ -16,7 +16,7 @@ resource "aws_lb" "tf-alb" {
   name               = "tf-alb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.tf-ALB-SG]
+  security_groups    = [aws_security_group.tf-ALB-SG.id]
   subnets            = [aws_subnet.tf-subnet-1.id, aws_subnet.tf-subnet-2.id]
 
   tags = {
