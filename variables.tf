@@ -42,7 +42,7 @@ variable "availability_zone_2" {
 ###############################
 variable "image_id" {
   description = "The ID of the AMI to use for instances"
-  default     = ""
+  default     = "ami-080e1f13689e07408" # Ubuntu, 22.04 LTS, amd64 jammy image
 }
 
 variable "key_name" {
