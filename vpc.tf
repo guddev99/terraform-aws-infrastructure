@@ -1,7 +1,7 @@
 # Creates a VPC
 resource "aws_vpc" "tf-vpc" {
   cidr_block       = var.vpc_cidr_block
-  instance_tenancy = default
+  instance_tenancy = "default"
 
   tags = {
     Name = "tf-vpc"
