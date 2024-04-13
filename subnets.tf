@@ -27,7 +27,7 @@ resource "aws_route_table_association" "RT-association-1" {
   route_table_id = aws_route_table.tf-RT.id
 }
 
-resource "aws_route_table_association" "RT-association-1" {
+resource "aws_route_table_association" "RT-association-2" {
   subnet_id      = aws_subnet.tf-subnet-2.id
   route_table_id = aws_route_table.tf-RT.id
 }
