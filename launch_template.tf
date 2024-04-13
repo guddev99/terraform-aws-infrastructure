@@ -1,3 +1,4 @@
+# Creates a Launch template for EC2 instances
 resource "aws_launch_template" "tf-LT" {
   name                   = "tf-LT"
   image_id               = var.image_id
